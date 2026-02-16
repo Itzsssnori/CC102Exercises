@@ -13,7 +13,7 @@ int main()
     std::cout << "Enter number of quizzes per student: ";
     std::cin >> quizzes;
     
-    std::vector<std::vector<double>> scores(students, std::vector<double>(quizzes));
+    std::vector<std::vector<int>> scores(students, std::vector<int>(quizzes));
     std::vector<double> average(students);
 
     for (int i = 0; i < students; i++)
