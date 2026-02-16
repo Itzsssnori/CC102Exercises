@@ -8,7 +8,7 @@ int main()
     char choice{};
     do {
     int students{}, quizzes{};
-    std::cout << "Enter number of students: ";
+    std::cout << "\nEnter number of students: ";
     std::cin >> students;
     std::cout << "Enter number of quizzes per student: ";
     std::cin >> quizzes;
@@ -35,6 +35,8 @@ int main()
         std::cout << "Quiz "<< j + 1 << '\t';
     }
     std::cout << "Average\n";
+
+    std::cout << "-----------------------------------------------\n";
     
     for (int i = 0; i < students; i++)
     {
@@ -45,7 +47,7 @@ int main()
         }
         std::cout << std::fixed << std::setprecision(2) << average[i] << std::endl;
     }
-    std::cout << "Do you want to repeat(y/n)? ";
+    std::cout << "\nDo you want to repeat(y/n)? ";
     std::cin >> choice;
     } while(toupper(choice)=='Y');
 

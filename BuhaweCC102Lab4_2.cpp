@@ -34,6 +34,9 @@ int main()
         }
         std::cout << "Total\n";
 
+        std::cout << "-----------------------------------------------\n";
+    
+
         double grandTotal {0};
 
         for (int i = 0; i < 5; i++) {
@@ -47,6 +50,8 @@ int main()
             std::cout << rowTotal << std::endl;
                 grandTotal += rowTotal;
         }
+
+        std::cout << "-----------------------------------------------\n";
 
         std::cout << "Total\t";
         for (int j = 0; j < 4; j++) {
